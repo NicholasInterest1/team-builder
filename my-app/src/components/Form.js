@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Form = props => {
-  const [members, setMembers] = useState({ name: "", position: "", role: "" });
+  const [members, setMembers] = useState({ name: "", email: "", role: "" });
   const changeHandle = e => {
     setMembers({ ...members, [e.target.name]: e.target.value });
   };
@@ -13,7 +13,7 @@ const Form = props => {
       id: Date.now()
     };
     props.addMembers(newMember);
-    setMembers({ name: "", position: "", role: "" });
+    setMembers({ name: "", email: "", role: "" });
   };
   return (
     <div className="form-wrapper">
@@ -32,14 +32,14 @@ const Form = props => {
         </div>
 
         <div className="player">
-          <label htmlFor="position">Position: </label>
+          <label htmlFor="email">email: </label>
         </div>
         <div className="player-form">
           <input
-            name="position"
+            name="email"
             type="text"
-            placeholder="position"
-            value={members.position}
+            placeholder="email"
+            value={members.email}
             onChange={changeHandle}
           />
         </div>

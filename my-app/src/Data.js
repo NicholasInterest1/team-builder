@@ -1,56 +1,56 @@
 export default [
   {
-    Name: "Cameron",
-    Email: "cameronalvarado@gmail.com",
-    AssignedRole: "UI"
+    name: "Cameron",
+    email: "cameronalvarado@gmail.com",
+    role: "UI"
   },
 
   {
-    Name: "Ndawi",
-    Email: "ndawi@gmail.com",
-    AssignedRole: "UI"
+    name: "Ndawi",
+    email: "ndawi@gmail.com",
+    role: "UI"
   },
 
   {
-    Name: "Nick",
-    Email: "nickinterest@gmail.com",
-    AssignedRole: "Front-End"
+    name: "Nick",
+    email: "nickinterest@gmail.com",
+    role: "Front-End"
   },
 
   {
-    Name: "Devin",
-    Email: "devindias@gmail.com",
-    AssignedRole: "Front-End"
+    name: "Devin",
+    email: "devindias@gmail.com",
+    role: "Front-End"
   },
 
   {
-    Name: "Iris",
-    Email: "irisjitomo@gmail.com",
-    AssignedRole: "Front-End"
+    name: "Iris",
+    email: "irisjitomo@gmail.com",
+    role: "Front-End"
   },
 
   {
-    Name: "Jeffrey",
-    Email: "jeffwhitaker@gmail.com",
-    AssignedRole: "Back-End"
+    name: "Jeffrey",
+    email: "jeffwhitaker@gmail.com",
+    role: "Back-End"
   },
 
   {
-    Name: "Julie",
-    Email: "juliegumerman@gmail.com",
-    AssignedRole: "Back-End"
+    name: "Julie",
+    email: "juliegumerman@gmail.com",
+    role: "Back-End"
   },
 
   {
-    Name: "Allison",
-    Email: "allisondonnelly@gmail.com",
-    AssignedRole: "Ux Designer"
+    name: "Allison",
+    email: "allisondonnelly@gmail.com",
+    role: "Ux Designer"
   },
 
   {
-    Name: "Jonathan",
-    Email: "jonathantaylor@gmail.com",
-    AssignedRole: "Ux Designer"
+    name: "Jonathan",
+    email: "jonathantaylor@gmail.com",
+    role: "Ux Designer"
   }
 
 ];
