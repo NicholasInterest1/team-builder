@@ -17,7 +17,7 @@ const Form = props => {
   };
   return (
     <form onSubmit={submitForm}>
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name">Name: </label>
       <input
         name="name"
         type="text"
@@ -26,7 +26,7 @@ const Form = props => {
         onChange={changeHandle}
       />
 
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email">Email: </label>
       <input
         name="email"
         type="text"
@@ -35,7 +35,7 @@ const Form = props => {
         onChange={changeHandle}
       />
 
-      <label htmlFor="role">Role</label>
+      <label htmlFor="role">Role: </label>
       <input
         name="role"
         type="text"

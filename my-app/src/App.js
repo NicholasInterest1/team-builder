@@ -17,7 +17,6 @@ function App() {
     <div className="App">
       <h1>Team Builder</h1>
       <Form addMembers={addMembers} />
-      <Data members={members} />
       <h1>Completed Forms</h1>
       <CompletedForm members={members} />
     </div>
