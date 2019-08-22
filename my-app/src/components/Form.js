@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Form = props => {
-  const [members, setMembers] = useState({ name: "", email: "", role: "" });
+  const [members, setMembers] = useState({ name: "", position: "", role: "" });
   const changeHandle = e => {
     setMembers({ ...members, [e.target.name]: e.target.value });
   };
@@ -13,39 +13,55 @@ const Form = props => {
       id: Date.now()
     };
     props.addMembers(newMember);
-    setMembers({ name: "", email: "", role: "" });
+    setMembers({ name: "", position: "", role: "" });
   };
   return (
-    <form onSubmit={submitForm}>
-      <label htmlFor="name">Name: </label>
-      <input
-        name="name"
-        type="text"
-        placeholder="name"
-        value={members.name}
-        onChange={changeHandle}
-      />
+    <div className="form-wrapper">
+      <form onSubmit={submitForm}>
+        <div className="player">
+          <label htmlFor="name">Player Name: </label>
+        </div>
+        <div className="player-form">
+          <input
+            name="name"
+            type="text"
+            placeholder="name"
+            value={members.name}
+            onChange={changeHandle}
+          />
+        </div>
 
-      <label htmlFor="email">Email: </label>
-      <input
-        name="email"
-        type="text"
-        placeholder="example@example.com"
-        value={members.email}
-        onChange={changeHandle}
-      />
+        <div className="player">
+          <label htmlFor="position">Position: </label>
+        </div>
+        <div className="player-form">
+          <input
+            name="position"
+            type="text"
+            placeholder="position"
+            value={members.position}
+            onChange={changeHandle}
+          />
+        </div>
 
-      <label htmlFor="role">Role: </label>
-      <input
-        name="role"
-        type="text"
-        placeholder="role"
-        value={members.role}
-        onChange={changeHandle}
-      />
+        <div className="player">
+          <label htmlFor="role">Role: </label>
+        </div>
+        <div className="player-form">
+          <input
+            name="role"
+            type="text"
+            placeholder="role"
+            value={members.role}
+            onChange={changeHandle}
+          />
+        </div>
 
-      <button type="submit">Move Forward</button>
-    </form>
+        <div className="btn">
+          <button type="submit">Move Forward</button>
+        </div>
+      </form>
+      </div>
   );
 };
 
